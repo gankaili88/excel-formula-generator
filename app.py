@@ -18,7 +18,12 @@ import os
 # Load API key from .env in same folder as this file
 env_path = Path(__file__).parent / ".env"
 load_dotenv(dotenv_path=env_path)
-API_KEY = os.getenv("GOOGLE_API_KEY")
+
+# Try Streamlit secrets first (for cloud deployment), fall back to .env (for local dev)
+try:
+    API_KEY = st.secrets["GOOGLE_API_KEY"]
+except (KeyError, FileNotFoundError):
+    API_KEY = os.getenv("GOOGLE_API_KEY")
 
 st.set_page_config(page_title="Excel Formula Generator", page_icon="📊", layout="wide")
 st.title("Excel Formula Generator")
