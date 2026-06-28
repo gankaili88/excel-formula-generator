@@ -2,8 +2,7 @@
 
 A bilingual translator between plain English and Excel formulas, built for finance and accounting professionals. Powered by Google's Gemini API.
 
-> 🔗 **Live demo:** (https:excel-formula-generator-gankaili.streamlit.app/)
-
+> 🔗 **Live demo:** [excel-formula-generator-gankaili.streamlit.app](https://excel-formula-generator-gankaili.streamlit.app/)
 ---
 
 ## What it does
