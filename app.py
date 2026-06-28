@@ -201,4 +201,4 @@ with st.sidebar:
                 st.code(item["result"], language="excel")
 
     st.divider()
-    st.caption("Built by [your name] · ICAEW student · [LinkedIn link]")
+    st.caption("Built by Gan Kai Li · ICAEW student · https://www.linkedin.com/in/gan-kai-li-a8a782317/")
